@@ -16,13 +16,8 @@ public class FormServlet extends HttpServlet {
 
 		var searchKeywords = req.getParameter("keywords");
 
-		var searchEngine = req.getParameter("engine");
+		var searchEngine = Engine.valueOf(req.getParameter("engine"));
 
-		String url = "https://www.google.com/search?q=";
-		if (searchEngine.equals("GOOGLE")) url = "https://www.google.com/search?q=";
-		else if (searchEngine.equals("BING")) url = "https://www.bing.com/search?q=";
-		else if (searchEngine.equals("ASK")) url = "https://fr.ask.com/web?q=";
-
-		resp.sendRedirect(url + searchKeywords);
+		resp.sendRedirect(searchEngine.getUrl() + searchKeywords);
     }
 }
