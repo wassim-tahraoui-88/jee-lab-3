@@ -19,27 +19,35 @@
 <div class="card shadow" style="width: 100%; max-width: 400px;">
     <div class="card-body">
         <h5 class="card-title text-center mb-4">Search Engine</h5>
-        <form action="form-servlet" method="post">
+        <form action="calcul-servlet" method="post">
             <div class="mb-3">
-                <label for="keywords" class="form-label">Keywords</label>
-                <input type="text" class="form-control" id="keywords" name="keywords" placeholder="Enter your search keywords..." required>
+                <label for="operand-1" class="form-label">Operand 1</label>
+                <input type="number" class="form-control" id="operand-1" name="operand-1" placeholder="Enter the first operand..." required>
+            </div>
+            <div class="mb-3">
+                <label for="operand-2" class="form-label">Operand 2</label>
+                <input type="number" class="form-control" id="operand-2" name="operand-2" placeholder="Enter the second operand..." required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Engine:</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="engine" id="google" value="GOOGLE" checked>
-                    <label class="form-check-label" for="google">Google</label>
+                    <input class="form-check-input" type="radio" name="operation" id="addition" value="Addition" checked>
+                    <label class="form-check-label" for="addition">Addition</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="engine" id="bing" value="BING">
-                    <label class="form-check-label" for="bing">Bing</label>
+                    <input class="form-check-input" type="radio" name="operation" id="subtraction" value="Subtraction">
+                    <label class="form-check-label" for="subtraction">Subtraction</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="engine" id="ask" value="ASK">
-                    <label class="form-check-label" for="ask">ASK</label>
+                    <input class="form-check-input" type="radio" name="operation" id="multiplication" value="Multiplication">
+                    <label class="form-check-label" for="multiplication">Multiplication</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operation" id="division" value="Division">
+                    <label class="form-check-label" for="division">Division</label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Search</button>
+            <button type="submit" class="btn btn-primary w-100">Calculate</button>
         </form>
     </div>
 </div>

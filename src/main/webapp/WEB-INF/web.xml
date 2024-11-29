@@ -2,11 +2,11 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
     <display-name>First App</display-name>
     <servlet>
-        <servlet-name>FormServlet</servlet-name>
-        <servlet-class>com.horizon.lab_1.controller.FormServlet</servlet-class>
+        <servlet-name>CalculServlet</servlet-name>
+        <servlet-class>com.horizon.lab_1.controller.CalculServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>FormServlet</servlet-name>
-        <url-pattern>/form-servlet</url-pattern>
+        <servlet-name>CalculServlet</servlet-name>
+        <url-pattern>/calcul-servlet</url-pattern>
     </servlet-mapping>
 </web-app>
