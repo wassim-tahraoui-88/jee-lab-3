@@ -18,7 +18,7 @@
 <body class="bg-dark">
 <div class="card shadow" style="width: 100%; max-width: 400px;">
     <div class="card-body">
-        <h5 class="card-title text-center mb-4">Search Engine</h5>
+        <h5 class="card-title text-center mb-4">Price Calculator</h5>
         <form action="product-servlet" method="post">
             <div class="mb-3">
                 <label for="product-name" class="form-label">Product Name:</label>
