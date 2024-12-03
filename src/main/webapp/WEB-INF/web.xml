@@ -2,11 +2,28 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
     <display-name>First App</display-name>
     <servlet>
-        <servlet-name>ProductServlet</servlet-name>
-        <servlet-class>com.horizon.lab_1.controller.ProductServlet</servlet-class>
+        <servlet-name>DisplayTodoServlet</servlet-name>
+        <servlet-class>com.horizon.lab_2.controller.DisplayTodoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddTodoServlet</servlet-name>
+        <servlet-class>com.horizon.lab_2.controller.AddTodoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteTodoServlet</servlet-name>
+        <servlet-class>com.horizon.lab_2.controller.DeleteTodoServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>ProductServlet</servlet-name>
-        <url-pattern>/product-servlet</url-pattern>
+        <servlet-name>DisplayTodoServlet</servlet-name>
+        <url-pattern>/DisplayTodo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddTodoServlet</servlet-name>
+        <url-pattern>/AddTodo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteTodoServlet</servlet-name>
+        <url-pattern>/DeleteTodo/*</url-pattern>
     </servlet-mapping>
 </web-app>
