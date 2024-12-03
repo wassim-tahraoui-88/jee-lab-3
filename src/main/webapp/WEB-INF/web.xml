@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
     <display-name>First App</display-name>
+
     <servlet>
         <servlet-name>SetThemeServlet</servlet-name>
         <servlet-class>com.horizon.lab_3.controller.SetThemeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowThemeServlet</servlet-name>
+        <servlet-class>com.horizon.lab_3.controller.ShowThemeServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>SetThemeServlet</servlet-name>
         <url-pattern>/SetTheme</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowThemeServlet</servlet-name>
+        <url-pattern>/ShowTheme</url-pattern>
     </servlet-mapping>
 </web-app>

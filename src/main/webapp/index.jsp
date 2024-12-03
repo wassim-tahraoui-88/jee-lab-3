@@ -2,26 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Todo Manager</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f8f9fa;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Theme Selector</title>
 </head>
-<body class="bg-dark">
-    <div class="card shadow" style="width: 100%; max-width: 400px;">
-        <div class="card-body container flex-column">
-            <h5 class="card-title text-center mb-4">To-Do List Manager</h5>
-            <div class="container w-100"><a class="link-info text-center" href="add.jsp">Add a new Task</a></div>
-            <div class="container w-100"><a class="link-info text-center" href="DisplayTodo">Display All Tasks</a></div>
-        </div>
-    </div>
+<body>
+    <h1>Select Your Theme</h1>
+    <form action="SetTheme" method="post">
+        <label>
+            <input type="radio" name="theme" value="LIGHT" checked>
+            Light Mode
+        </label>
+        <label>
+            <input type="radio" name="theme" value="DARK" checked>
+            Dark Mode
+        </label>
+        <button type="submit">Save Preference</button>
+    </form>
 </body>
 </html>
